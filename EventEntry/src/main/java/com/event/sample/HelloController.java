@@ -1,4 +1,4 @@
-package com.evnet.sample;
+package com.event.sample;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.ModelMap;
