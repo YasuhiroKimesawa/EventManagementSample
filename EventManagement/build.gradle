@@ -1,0 +1,23 @@
+apply plugin: 'java'
+apply plugin: 'war'
+
+project.ext {
+    artifactId = 'event-manager'
+    springframeworkVersion = '3.2.3.RELEASE'
+    defaultEncoding = 'UTF-8'
+}
+
+repositories {
+    mavenLocal()
+    mavenCentral()
+}
+
+dependencies {
+    compile  "org.springframework:spring-core:${ext.springframeworkVersion}"
+    compile  "org.springframework:spring-web:${ext.springframeworkVersion}"
+    compile  'javax.servlet:servlet-api:2.5@jar'
+    runtime  'javax.servlet.jsp:jsp-api:2.1'
+    compile  "org.springframework:spring-webmvc:${ext.springframeworkVersion}"
+    compile  "org.springframework:spring-test:${ext.springframeworkVersion}"
+    testCompile 'junit:junit:4.11'
+}
