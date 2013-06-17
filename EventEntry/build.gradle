@@ -20,4 +20,9 @@ dependencies {
     compile  "org.springframework:spring-webmvc:${ext.springframeworkVersion}"
     compile  "org.springframework:spring-test:${ext.springframeworkVersion}"
     testCompile 'junit:junit:4.11'
+    testCompile 'org.spockframework:spock-core:0.7-groovy-2.0'
+    compile 'org.jumpmind.symmetric.jdbc:postgresql:9.2-1002-jdbc4'
+    testCompile 'org.spockframework:spock-spring:0.7-groovy-2.0'
+    compile 'org.mybatis:mybatis:3.2.2'
+    compile 'org.mybatis:mybatis-spring:1.2.0'
 }
