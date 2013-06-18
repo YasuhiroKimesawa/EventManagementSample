@@ -14,5 +14,7 @@ class EntrySpec extends Specification
             def twitter = new TwitterAccount( '@tatuya' )
             def profile = new Profile( mail, twitter )
             def entry = new NormalEntry( (long)1, event, name, profile )
+
+        entry.toString()
     }
 }

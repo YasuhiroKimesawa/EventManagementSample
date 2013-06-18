@@ -8,5 +8,7 @@ class EventSpec extends Specification
     {
         given :
             def event = new NormalEvent( (long)1, "読書会" );
+
+        event.toString()
     }
 }
