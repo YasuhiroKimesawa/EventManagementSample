@@ -2,8 +2,8 @@ package com.event.model.event;
 
 public class NormalEvent implements  Event
 {
-    private Long id;
-    private String name;
+    private final Long id;
+    private final String name;
 
     public NormalEvent( Long id, String name )
     {

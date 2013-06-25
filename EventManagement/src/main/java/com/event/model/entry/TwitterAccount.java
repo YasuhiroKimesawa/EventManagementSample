@@ -2,7 +2,7 @@ package com.event.model.entry;
 
 class TwitterAccount
 {
-    private String account;
+    private final String account;
 
     TwitterAccount( String account )
     {

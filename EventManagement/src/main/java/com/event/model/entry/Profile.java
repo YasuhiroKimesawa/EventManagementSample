@@ -2,8 +2,8 @@ package com.event.model.entry;
 
 class Profile
 {
-    private MailAddress mailAddress;
-    private TwitterAccount twitterAccount;
+    private final MailAddress mailAddress;
+    private final TwitterAccount twitterAccount;
 
     Profile( MailAddress mailAddress, TwitterAccount twitterAccount )
     {

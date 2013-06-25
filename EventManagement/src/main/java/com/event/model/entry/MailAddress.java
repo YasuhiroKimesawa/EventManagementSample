@@ -2,7 +2,7 @@ package com.event.model.entry;
 
 class MailAddress
 {
-    private String mailAddress;
+    private final String mailAddress;
 
     MailAddress( String mailAddress )
     {

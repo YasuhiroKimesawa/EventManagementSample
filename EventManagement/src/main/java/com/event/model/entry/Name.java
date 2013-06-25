@@ -2,8 +2,8 @@ package com.event.model.entry;
 
 class Name
 {
-    private String first;
-    private String last;
+    private final String first;
+    private final String last;
 
     Name( String first, String last )
     {

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.event.datasource.entry.EntryMapper">
+
+    <resultMap id="entry" type="normalEntry">
+        <constructor>
+            <idArg column="event_id" javaType="java.lang.Long" />
+            <arg resultMap="name" javaType="name" />
+            <arg
+        </constructor>
+    </resultMap>
+
+    <resultMap id="name" type="name">
+        <constructor>
+            <arg column="first_name" javaType="java.lang.String"/>
+            <arg column="last_name" javaType="java.lang.String"/>
+        </constructor>
+    </resultMap>
+
+    <select id="find" resultMap="entry">
+      SELECT
+          entry_id
+          , event_id
+          , first_name
+          , last_name
+          , twitter_id
+          , mail_address
+      FROM entry.entry
+    </select>
+</mapper>
