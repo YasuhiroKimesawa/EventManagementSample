@@ -1,0 +1,1 @@
+ALTER TABLE event.event RENAME COLUMN id TO event_id;
